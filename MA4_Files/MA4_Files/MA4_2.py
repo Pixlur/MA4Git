@@ -7,6 +7,6 @@ def main():
 	print(f.get())
 	f.set(1)
 	print(f.get())
-	print(f.fib)
+	print(f.fib())
 if __name__ == '__main__':
 	main()
