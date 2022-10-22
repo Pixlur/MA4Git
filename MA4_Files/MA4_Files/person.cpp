@@ -24,8 +24,8 @@ void Person::set(int n){
 	}
 
 int _fib(int n){
-	if(n <= 1){
-	return n;
+	if(n <= 2){
+	return 1;
 	}
 	else{
 		return _fib(n-1) + _fib(n-2);
