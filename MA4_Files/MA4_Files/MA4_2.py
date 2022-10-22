@@ -17,12 +17,7 @@ def fib_numba(n):
 		return(fib_numba(n-1) + fib_numba(n-2))
 
 def main():
-	f = Person(5)
-	print(f.get())
-	f.set(1)
-	print(f.get())
-	print(f.fib())
-	f.set(20)
+	f = Person(30)
 	print(f.fib())
 if __name__ == '__main__':
 	main()
