@@ -8,7 +8,7 @@ def main():
 	f.set(1)
 	print(f.get())
 	print(f.fib())
-	f.set(5)
+	f.set(6)
 	print(f.fib())
 if __name__ == '__main__':
 	main()
