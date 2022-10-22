@@ -22,7 +22,7 @@ def main():
 	f.set(1)
 	print(f.get())
 	print(f.fib())
-	f.set(15)
+	f.set(20)
 	print(f.fib())
 if __name__ == '__main__':
 	main()
