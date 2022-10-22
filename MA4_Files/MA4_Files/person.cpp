@@ -25,10 +25,6 @@ void Person::set(int n){
 	age = n;
 	}
 
-int Person::fib(){
-	return _fib(age);
-}
-
 int _fib(int n){
 	if(n <= 1){
 	return n;
@@ -37,6 +33,11 @@ int _fib(int n){
 		return _fib(n-1) + _fib(n-2);
 	}
 	}
+
+int Person::fib(){
+	return _fib(age);
+}
+
 
 extern "C"{
 	Person* Person_new(int n) {return new Person(n);}
