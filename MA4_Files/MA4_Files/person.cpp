@@ -9,10 +9,12 @@ class Person{
 		int fib();
 	private:
 		int age;
+		int num1;
 	};
  
 Person::Person(int n){
 	age = n;
+	num1 = n;
 	}
  
 int Person::get(){
@@ -24,12 +26,15 @@ void Person::set(int n){
 	}
 
 int Person::fib(){
-	if(age <= 1){
-	return age;
+	return int _fib(int age);
+}
+
+int Person::_fib(int n){
+	if(n <= 1){
+	return n;
 	}
 	else{
-		age = age + 1;
-		return age;
+		return (int _fib(int n-1) + int (int n-2) );
 	}
 	}
 
