@@ -27,6 +27,10 @@ int Person::fib(){
 	if(age <= 1){
 	return age;
 	}
+	else{
+		age = age + 1;
+		return age;
+	}
 	}
 
 extern "C"{
