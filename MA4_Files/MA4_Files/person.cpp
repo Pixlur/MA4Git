@@ -32,7 +32,7 @@ unsigned long int _fib(int n){
 	}
 	}
 
-int Person::fib(){
+unsigned long int Person::fib(){
 	return _fib(age);
 }
 
