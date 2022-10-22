@@ -42,10 +42,13 @@ def main():
 		end = pc()
 		fibc.append(end-start)
 	"""
-	plt.plot(n ,fibpy)
+	plt.plot(n ,fibpy, "Python")
 	"""
-	plt.plot(n ,fibnum)
-	plt.plot(n ,fibc)
+	plt.plot(n ,fibnum, label = "Numpy")
+	plt.plot(n ,fibc, label = "c++")
+	plt.xlabel("n:te termen i fibonacci serien")
+	plt.ylabel("tid(s)")
+	plt.legend
 	plt.savefig("plots.svg")
 if __name__ == '__main__':
 	main()
