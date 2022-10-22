@@ -9,12 +9,10 @@ class Person{
 		int fib();
 	private:
 		int age;
-		int num1;
 	};
  
 Person::Person(int n){
 	age = n;
-	num1 = n;
 	}
  
 int Person::get(){
