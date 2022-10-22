@@ -23,13 +23,11 @@ def main():
 	fibnum = []
 	fibc = []
 	n = [x + 30 for x in range(16)]
-	"""
 	for x in n:
 		start = pc()
 		fib_py(x)
 		end = pc()
 		fibpy.append(end-start)
-	"""
 	for x in n:
 		start = pc()
 		fib_numba(x)
@@ -41,9 +39,8 @@ def main():
 		f.fib()
 		end = pc()
 		fibc.append(end-start)
-	"""
+
 	plt.plot(n ,fibpy, "Python")
-	"""
 	plt.plot(n ,fibnum, label = "Numpy")
 	plt.plot(n ,fibc, label = "c++")
 	plt.xlabel("n:te termen i fibonacci serien")
