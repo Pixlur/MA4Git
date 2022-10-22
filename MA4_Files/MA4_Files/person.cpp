@@ -1,4 +1,5 @@
 #include <cstdlib>
+#include <cstdint>
 // Person class 
 
 class Person{
