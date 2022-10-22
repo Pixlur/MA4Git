@@ -48,7 +48,7 @@ def main():
 	plt.plot(n ,fibc, label = "c++")
 	plt.xlabel("n:te termen i fibonacci serien")
 	plt.ylabel("tid(s)")
-	plt.legend
+	plt.legend(loc='best')
 	plt.savefig("plots.svg")
 if __name__ == '__main__':
 	main()
