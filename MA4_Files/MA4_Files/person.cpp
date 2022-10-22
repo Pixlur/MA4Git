@@ -6,7 +6,7 @@ class Person{
 		Person(int);
 		int get();
 		void set(int);
-		int fib();
+		unsigned long int fib();
 	private:
 		int age;
 	};
