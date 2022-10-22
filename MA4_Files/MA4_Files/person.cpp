@@ -23,7 +23,7 @@ void Person::set(int n){
 	age = n;
 	}
 
-int _fib(int n){
+u_int_64 _fib(int n){
 	if(n <= 2){
 	return 1;
 	}
