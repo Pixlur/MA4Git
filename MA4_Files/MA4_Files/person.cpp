@@ -7,7 +7,7 @@ class Person{
 		Person(int);
 		int get();
 		void set(int);
-		uint64_t fib();
+		int fib();
 	private:
 		int age;
 	};
@@ -24,7 +24,7 @@ void Person::set(int n){
 	age = n;
 	}
 
-uint64_t _fib(int n){
+int _fib(int n){
 	if(n <= 2){
 	return 1;
 	}
@@ -33,7 +33,7 @@ uint64_t _fib(int n){
 	}
 	}
 
-uint64_t Person::fib(){
+int Person::fib(){
 	return _fib(age);
 }
 
