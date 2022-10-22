@@ -39,9 +39,9 @@ def main():
 		f.fib()
 		end = pc()
 		fibc.append(end-start)
-plt.plot(n,fibpy)
-plt.plot(n,fibnum)
-plt.plot(n,fibc)
-plt.savefig("plots.svg")
+	plt.plot(n ,fibpy)
+	plt.plot(n ,fibnum)
+	plt.plot(n ,fibc)
+	plt.savefig("plots.svg")
 if __name__ == '__main__':
 	main()
