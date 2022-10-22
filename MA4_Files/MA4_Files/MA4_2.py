@@ -23,6 +23,7 @@ def main():
 	fibnum = []
 	fibc = []
 	n = [x + 30 for x in range(16)]
+	"""
 	for x in n:
 		start = pc()
 		fib_py(x)
@@ -33,14 +34,17 @@ def main():
 		fib_numba(x)
 		end = pc()
 		fibnum.append(end-start)
+	"""
 	for x in n:
 		start = pc()
 		f = Person(x)
 		f.fib()
 		end = pc()
 		fibc.append(end-start)
+	"""
 	plt.plot(n ,fibpy)
 	plt.plot(n ,fibnum)
+	"""
 	plt.plot(n ,fibc)
 	plt.savefig("plots.svg")
 if __name__ == '__main__':
