@@ -34,7 +34,7 @@ def main():
 		end = pc()
 		fibnum.append(end-start)
 	f = Person(47)
-	print(f.fib())
+	print(f.fib()) #-1323752223 overflow
 
 	plt.plot(n ,fibpy, label = "Python")
 	plt.plot(n ,fibnum, label = "Numpy")
