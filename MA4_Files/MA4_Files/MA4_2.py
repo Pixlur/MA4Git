@@ -21,8 +21,8 @@ def fib_numba(n):
 def main():
 	fibpy = []
 	fibnum = []
-	fibc = []
-	n = [x + 30 for x in range(16)]
+	#fibc = []
+	n = [x + 20 for x in range(11)]
 	for x in n:
 		start = pc()
 		fib_py(x)
@@ -33,19 +33,15 @@ def main():
 		fib_numba(x)
 		end = pc()
 		fibnum.append(end-start)
-	for x in n:
-		start = pc()
-		f = Person(x)
-		f.fib()
-		end = pc()
-		fibc.append(end-start)
+	f = Person(47)
+	print(f.fib())
 
 	plt.plot(n ,fibpy, label = "Python")
 	plt.plot(n ,fibnum, label = "Numpy")
-	plt.plot(n ,fibc, label = "c++")
+	#plt.plot(n ,fibc, label = "c++")
 	plt.xlabel("n:te termen i fibonacci serien")
 	plt.ylabel("tid(s)")
 	plt.legend(loc='best')
-	plt.savefig("plots.svg")
+	plt.savefig("plots2.svg")
 if __name__ == '__main__':
 	main()
